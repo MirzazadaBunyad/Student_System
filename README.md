@@ -31,6 +31,9 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+I used Tailwind.CSS in the design of this project, which I wrote with Next.js. As a database, the data comes from MongoDB. The data contained in the student-datas.json file inside the files is created by creating an account in MongoDB with the Thunder Client extension and using GET and POST methods. you can send and store it to your database and then start the project and view it in the browser. You can also delete the desired data from the database using the Delete method, and add new student data to the database using the Update method.
+Thanks.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
