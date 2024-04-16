@@ -13,7 +13,7 @@ export default function EditForm({ studentData }) {
 
   const router = useRouter();
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
@@ -72,10 +72,9 @@ export default function EditForm({ studentData }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-wrap w-full lg:w-1/2 mx-auto mt-11 bg-slate-600  px-6 py-8 rounded shadow-md text-black "
+      className="flex flex-wrap w-full lg:w-1/2 bg-slate-700 px-6 py-8 rounded shadow-md text-black"
     >
       <h1 className="mb-8 text-3xl text-center text-white">Student Info</h1>
-
       <input
         value={fullname}
         onChange={(e) => setFullname(e.target.value)}

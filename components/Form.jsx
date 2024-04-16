@@ -54,10 +54,9 @@ export default function Form() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-wrap w-full lg:w-[80%] mx-auto mt-11 bg-slate-600  px-6 py-8 rounded shadow-md text-black "
+      className="flex flex-wrap w-[50%] mx-auto mt-11 bg-slate-700 px-6 py-8 rounded shadow-md text-black"
     >
-      <h1 className="mb-8 text-3xl text-center text-white">Register Student</h1>
-
+      <h1 className="text-3xl text-center text-white">Register Student</h1>
       <input
         value={fullname}
         onChange={(e) => setFullname(e.target.value)}
@@ -72,7 +71,7 @@ export default function Form() {
         type="email"
         className="block border border-grey-light w-full p-3 rounded mb-4"
         name="email"
-        placeholder="Email"
+        placeholder="E-mail"
       />
       <input
         value={mobile}
@@ -96,7 +95,7 @@ export default function Form() {
         type="text"
         className="block border border-grey-light w-full p-3 rounded mb-4"
         name="image"
-        placeholder="Image"
+        placeholder="Image URL"
       />
       <select
         value={department}
@@ -113,7 +112,7 @@ export default function Form() {
 
       <button
         type="submit"
-        className="w-full text-center py-3 rounded bg-green transition-[.3s] text-[20px] font-bold text-blue-500 hover:text-white hover:bg-blue-700 focus:outline-none my-1"
+        className="w-full text-center py-3 rounded transition-[.3s] text-[20px] font-bold text-blue-500 hover:text-white hover:bg-blue-700 focus:outline-none my-1"
       >
         Submit
       </button>

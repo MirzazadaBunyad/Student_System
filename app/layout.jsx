@@ -21,12 +21,12 @@ export default async function RootLayout({ children }) {
       <head />
       <body>
         <Navbar />
-        <div className="flex">
-          <div className="flex max-md:flex-col max-md:items-center">
+        <main className="flex w-[90%] mx-auto my-[20px]">
+          <div className="flex w-full">
             <Sidebar studentList={studentData.data} />
-            <main className="p-5 ">{children}</main>
+            {children}
           </div>
-        </div>
+        </main>
         <Footer />
       </body>
     </html>
